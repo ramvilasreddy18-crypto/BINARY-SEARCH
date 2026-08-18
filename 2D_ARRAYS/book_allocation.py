@@ -16,7 +16,7 @@ def allocation_is_possible(arr,barrier,k):
     else:
         return True
 def book_allocation(arr,k):
-    low = arr[0]
+    low = max(arr)
     high = sum(arr)
     while low<=high:
         mid = (low+high)//2
