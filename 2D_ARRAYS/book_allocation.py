@@ -8,7 +8,7 @@ def allocation_is_possible(arr,barrier,k):
             return False
         if (pages+arr[i])>barrier:
             allocated_stu += 1
-            pages += arr[i]
+            pages = arr[i]
         else:
             pages += arr[i]
     if allocated_stu>k :
